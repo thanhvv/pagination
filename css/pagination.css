@@ -1,0 +1,260 @@
+@charset "UTF-8";
+@font-face {
+	font-family: vccidanang;
+	src: url(../fonts/vccidanang.eot?pg1apw);
+	src: url(../fonts/vccidanang.eot?pg1apw#iefix) format("embedded-opentype"), url(../fonts/vccidanang.ttf?pg1apw) format("truetype"), url(../fonts/vccidanang.woff?pg1apw) format("woff"), url(../fonts/vccidanang.svg?pg1apw#vccidanang) format("svg");
+	font-weight: 400;
+	font-style: normal;
+	font-display: block
+}
+.pagination li a {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center
+}
+
+.pagination {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center
+}
+
+@media only screen and (max-width:1024px) {
+	.pagination {
+		justify-content: center
+	}
+}
+
+.pagination li {
+	background-color: #fff;
+	padding-left: 4px
+}
+
+@media only screen and (max-width:375px) {
+	.pagination li {
+		padding-top: 4px
+	}
+}
+
+.pagination a {
+	font-weight: 400;
+	font-size: 14px;
+	text-decoration: none;
+	border: 1px solid #e8e8e8;
+	width: 35px;
+	height: 35px;
+	color: #6b6b6b;
+	border-radius: 2px
+}
+
+@media only screen and (max-width:320px) {
+	.pagination a {
+		width: 32px;
+		height: 32px
+	}
+}
+
+.first:hover,
+.last:hover,
+.next:hover,
+.pagination li:not(.active) .btn-pagi:hover,
+.previous:hover {
+	background-color: #f5f5f5
+}
+
+.pagination li:not(.active) .btn-pagi:active,
+.pagination li:not(.active) .btn-pagi:focus {
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+	border-left-width: 1px
+}
+
+.pagination li.current .btn-pagi {
+	color: #fff;
+	background-color: #006694;
+	cursor: default;
+	pointer-events: none;
+	border-radius: 2px;
+	border: none
+}
+
+.first {
+	display: inline-block;
+	font-family: vccidanang;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0)
+}
+
+.first:before {
+	content: "\e907";
+	font-size: 11px
+}
+
+.first.disabled {
+	font-size: 11px;
+	content: "\e907";
+	color: #c7c7c7
+}
+
+.first.disabled:hover {
+	cursor: default;
+	background: 0 0
+}
+
+.first.active {
+	font-size: 11px;
+	content: "\e907";
+	color: #006694
+}
+
+.first.normal {
+	font-size: 11px;
+	content: "\e907";
+	color: #6b6b6b
+}
+
+.previous {
+	display: inline-block;
+	font-family: vccidanang;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0)
+}
+
+.previous:before {
+	font-size: 11px;
+	content: "\e90a"
+}
+
+.previous.disabled {
+	font-size: 11px;
+	content: "\e90a";
+	color: #c7c7c7
+}
+
+.previous.disabled:hover {
+	cursor: default;
+	background: 0 0
+}
+
+.previous.active {
+	font-size: 11px;
+	content: "\e90a";
+	color: #006694
+}
+
+.previous.normal {
+	font-size: 11px;
+	content: "\e90a";
+	color: #6b6b6b
+}
+
+.last {
+	display: inline-block;
+	font-family: vccidanang;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0)
+}
+
+.last:after {
+	font-size: 11px;
+	content: "\e908"
+}
+
+.last.disabled {
+	font-size: 11px;
+	content: "\e908";
+	color: #c7c7c7
+}
+
+.last.disabled:hover {
+	cursor: default;
+	background: 0 0
+}
+
+.last.active {
+	font-size: 11px;
+	content: "\e908";
+	color: #006694
+}
+
+.last.normal {
+	font-size: 11px;
+	content: "\e908";
+	color: #6b6b6b
+}
+
+.next {
+	display: inline-block;
+	font-family: vccidanang;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0)
+}
+
+.next:after {
+	font-size: 11px;
+	content: "\e909"
+}
+
+.next.disabled {
+	font-size: 11px;
+	content: "\e909";
+	color: #c7c7c7
+}
+
+.next.disabled:hover {
+	cursor: default;
+	background: 0 0
+}
+
+.next.active {
+	font-size: 11px;
+	content: "\e909";
+	color: #006694
+}
+
+.next.normal {
+	font-size: 11px;
+	content: "\e909";
+	color: #6b6b6b
+}
+
+.pagination-line {
+	background: #ededed;
+	height: 2px;
+	border: none;
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+
+li .page-numbers.current {
+  color: #fff;
+  background-color: #006694;
+  cursor: default;
+  pointer-events: none;
+  border-radius: 2px;
+  border: none;
+  height: 35px;
+  width: 35px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
